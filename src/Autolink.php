@@ -103,7 +103,7 @@ class Autolink
 	{
 		$self = $this;
 		
-		$regex = "/(([a-zA-Z]*=\")*\S+@\S+\.\S+)/";
+		$regex = "/[A-Z0-9._%-]+@[A-Z0-9.-]+.[A-Z]{2,4}/i";
 
 		return preg_replace_callback(
 			$regex,
